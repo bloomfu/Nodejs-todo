@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type='text'] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+input[type='submit'],
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+input[type='submit']:hover,
+button:hover {
+  background-color: #3e8e41;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex-grow: 1;
+}
+
+form[action$='/update'] {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form[action$='/update'] input[type='text'] {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    flex-wrap: wrap;
+  }
+
+  li span {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+  }
+
+  form[action$='/update'] {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  form[action$='/update'] input[type='text'] {
+    margin-right: 0;
+    width: 70%;
+  }
+}
