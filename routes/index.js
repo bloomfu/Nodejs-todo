@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
 const mysql = require('mysql')
+require('dotenv').config()
 
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'root',
+  password: process.env.PASS,
   database: 'todo_app',
 })
 
