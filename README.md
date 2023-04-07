@@ -1,3 +1,6 @@
 ## Node.js で簡易的な TODO アプリ作成してみた
 
-DB は MySQL を用いた。CRUD 機能を追加した。
+FW : Express.js<br>
+DB : MySQL<br>
+language : JavaScript<br>
+CRUD 機能を実装。
